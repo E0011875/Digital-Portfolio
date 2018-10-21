@@ -603,11 +603,18 @@
       $('#sidebarCollapse').on('click', function () {
           $('#sidebar').toggleClass('active');
       });
+      $('#sidebar .list-unstyled li a').on('click', function () {
+          $('#sidebar').toggleClass('active');
+      });
       $('.probootstrap-half').click(function () {
         $('.col-lg-8.mx-auto').animate({
           scrollTop: 0
         }, 500, 'easeInOutExpo');
       });
+      $('.probootstrap-main-nav li a').on('click', function(e){
+            $('.probootstrap-burger-menu').removeClass('active');
+            $('body').removeClass('show');
+		});
     //   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     //     anchor.addEventListener('click', function (e) {
     //       e.preventDefault();

@@ -1,6 +1,9 @@
 /* Your custom css code goes here */
 
-a {
+.a,
+.b,
+.c,
+.d {
   font-family: "Hind",sans-serif;
   letter-spacing: .10em;
 }
@@ -49,6 +52,9 @@ a {
 .responsive {
   width: 100%;
   height: auto;
+}
+.pdv-screen {
+  width:360px;
 }
 /* header */
 .header {
@@ -154,7 +160,7 @@ a {
 /* hide scrollbar */
 .portfolio-modal::-webkit-scrollbar,
 .mx-auto::-webkit-scrollbar,
-#sidebar::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
 	display: none;
 }
 /* close modal */
@@ -202,7 +208,7 @@ a {
   color: black;
   padding:20px;
 }
-#sidebar {
+.sidebar {
   min-width: 250px;
   max-width: 250px;
   padding-right: 50px;
@@ -210,10 +216,10 @@ a {
   border-right: 1px solid black;
   overflow: auto;
 }
-#sidebar ul {
+.sidebar ul {
   margin-bottom: 0;
 }
-#sidebar ul li {
+.sidebar ul li {
   padding: 0;
   list-style: none;
   line-height: 2.2;
@@ -222,31 +228,31 @@ a {
   justify-content: center;
 }
 .probootstrap-main-nav li a,
-#sidebar ul li a {
+.sidebar ul li a {
   position: relative;
   text-decoration: none;
   padding-bottom: 8px;
 }
-#sidebar ul li a {
+.sidebar ul li a {
   color: #999;
   font-size: 13px;
   font-weight: 300;
   margin-bottom: 10px;
 }
-#sidebar ul li a.topic {
+.sidebar ul li a.topic {
   margin-top: 10px;
   color: #555555;
   font-size: 17px;
   text-transform: uppercase;
 }
-#sidebar a.topic:before,
-#sidebar a.topic:after {
+.sidebar a.topic:before,
+.sidebar a.topic:after {
   background-color: rgba(21, 176, 151, 0.5);
 }
 .probootstrap-main-nav li a:before,
 .probootstrap-main-nav li a:after,
-#sidebar a:before,
-#sidebar a:after {
+.sidebar a:before,
+.sidebar a:after {
   content: '';
   position: absolute;
   bottom: 2px;
@@ -256,7 +262,7 @@ a {
   background-color: rgba(234, 82, 111, 0.5);
 }
 .probootstrap-main-nav li a:before,
-#sidebar a:before {
+.sidebar a:before {
   opacity: 0;
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
@@ -265,7 +271,7 @@ a {
   transition: transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s, -webkit-transform 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .probootstrap-main-nav li a:after,
-#sidebar a:after {
+.sidebar a:after {
   opacity: 0;
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
@@ -279,10 +285,10 @@ a {
 .probootstrap-main-nav a:focus:after,
 .probootstrap-main-nav li.active a:before,
 .probootstrap-main-nav li.active a:after,
-#sidebar a:hover:before,
-#sidebar a:hover:after,
-#sidebar a:focus:before,
-#sidebar a:focus:after {
+.sidebar a:hover:before,
+.sidebar a:hover:after,
+.sidebar a:focus:before,
+.sidebar a:focus:after {
   opacity: 1;
   -webkit-transform: translateY(0) !important;
           transform: translateY(0) !important;
@@ -290,8 +296,8 @@ a {
 .probootstrap-main-nav a:hover:before,
 .probootstrap-main-nav a:focus:before,
 .probootstrap-main-nav li.active a:before,
-#sidebar a:hover:before,
-#sidebar a:focus:before {
+.sidebar a:hover:before,
+.sidebar a:focus:before {
   transition: opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s !important;
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.2s, -webkit-transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
@@ -299,19 +305,19 @@ a {
 .probootstrap-main-nav a:hover:after,
 .probootstrap-main-nav a:focus:after,
 .probootstrap-main-nav li.active a:after,
-#sidebar a:hover:after,
-#sidebar a:focus:after {
+.sidebar a:hover:after,
+.sidebar a:focus:after {
   transition: opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
   transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s !important;
   transition: transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0s 0.2s, -webkit-transform 0s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
 }
 @media (max-width: 768px) {
-  #sidebar {
+  .sidebar {
     padding: 50px;
     margin-left: -250px;
     border-right: 0;
   }
-  #sidebar.active {
+  .sidebar.active {
     padding: 0;
     margin-left: 0;
   }
@@ -328,5 +334,9 @@ a {
   .mx-auto {
     font-size: 13px;
     line-height: 20px;
+  }
+  .pdv-screen {
+    width: 100%;
+    height: auto;
   }
 }

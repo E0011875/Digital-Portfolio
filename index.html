@@ -821,8 +821,8 @@
                 <h2 class="text-uppercase">Overview</h2>
                 <p><span style="font-size:1.5em; font-weight: bold;">Have</span> you ever been faced with the dilemma of choosing between prototypes? Are you skeptical with the result of your user testing? Do you find it hard to convince your stakeholders with your design?</p>
                 <p>If your answer to the above is yes, you have come to the right place. In this post, I will be demonstrating how to conduct a simple Human-computer Interaction (HCI) experiment to compare the performance between two menu interfaces. I will be using R commander to analyze the data gathered from the experiment using inferential statistics <a href="https://www.rcommander.com/" style="color:blue">(download link).</a>The same tools and technique can be applied to other interfaces as well – but you’ll need at least two interfaces or prototypes to perform a comparison. </p>
-                <p>By extracting quantitative data from an experiment, information can represented in graphical forms to reveal any patterns, trends or correlations underneath. They are useful to facilitate a design discussion by providing the necessary figures to support a claim. It is different from the traditional, ethnographic studies that involve observation and user inquiries. A HCI experiment tend to focus more on using empirical methods to investigate the usability of an interface by collecting evidence to prove or disprove a hypothesis.</p>
-                <p><i>Before we begin, I will like to caution you that the rest of the post will cover heavy statistical analysis and is not for the faint-hearted.</i></p>
+                <p>By extracting quantitative data from an experiment, information can be represented in graphical forms to reveal any patterns, trends or correlations underneath. They are useful to facilitate a design discussion by providing the necessary figures to support a claim. It is different from the traditional, ethnographic studies that involve observation and user inquiries. A HCI experiment tend to focus more on using empirical methods to investigate the usability of an interface by collecting evidence to prove or disprove a hypothesis.</p>
+                <p><i>Before we begin, I will like to caution you that the rest of this post will cover heavy statistical analysis and is not for the faint-hearted.</i></p>
                 <p><i>Still wish to continue despite being warned? If so, here we go…</i></p>
               </section>
               <section id="UnderstandingHCIExperiment">
@@ -835,7 +835,7 @@
               </section>
               <section id="HCIGlossary">
                 <h2 class="text-uppercase">HCI Glossary</h2>
-                <p>Notice that I have started using terminologies and concept which may sound foreign to some. To aid your understanding, I have highlighted some of them which require explanation. Feel free to skip this section if you already know hat they mean</p>
+                <p>Notice that I have started using terminologies and concept which may sound foreign to some. To aid your understanding, I have highlighted some of them which require explanation. Feel free to skip this if you already know hat they mean</p>
                 <ul>
                     <li>Independent variables: Variables that are manipulated in the experiment. A variable may contain more than one level or sub-category - think of it as your x-axis.</li>
                     <li>Dependent variables: Variables that your independent variables are measured against. These are metrics for measuring KPIs such as speed and time. Example include time, error rate and event count – similar to your y-axis.</li>
@@ -845,13 +845,13 @@
                     <li>External Validity: How much of the observed effects correspond to the outside world, in a standard day-to-day setting.</li>
                     <li>Ordering effect: The difference observed is due to the order of treatment being presented to a subject in an experiment.</li>
                     <li>Counterbalance: Methods used to control the ordering effect. Examples include full-counterbalance, sequential, Latin square, etc.</li>
-                    <li>p-value: The probability that your observation is likely to be due to chance. For simplicity sake, we will be using a significance level of 0.05. Should a p-value be less than 0.05, we conclude that a significance difference does not exist. Otherwise, there is a significant difference.</li>
+                    <li>p-value: The probability that your observation is likely to be due to chance. For simplicity sake, we will be using a significance level of 0.05. Should a p-value be less than 0.05, we conclude that a significance difference exist in our result. Otherwise, there is no significant difference.</li>
                     <li>Interaction Effect: The relationship between two or more variables where the effect of one variable depends on another variables.</li>
                 </ul>
               </section>
               <section id="HCIExperiment">
                 <h2 class="text-uppercase">HCI Experiment: Marking vs Radial Menu</h2>
-                <p>Let us begin with the objective of this experiment. Our purpose here is to investigate the difference in performance between two menu interfaces on laptops: Marking menu and Radial menu. </p>
+                <p>Let us begin with the objective of this experiment. Our purpose here is to investigate the difference in performance between two menu interfaces on laptops: <i>Marking</i> and <i>Radial</i >menu. </p>
                 <figure>
                     <img src="img/hci_experiment_marking_vs_radial_menu/marking_vs_radial.png" class="responsive">
                 </figure>

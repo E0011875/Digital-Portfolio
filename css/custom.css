@@ -313,8 +313,6 @@
 }
 .g6-prototype {
   width: 350px; 
-  height: 650px; 
-  margin: 10px;
 } 
 .g6-prototype .iframe {
   width: 424px; 
@@ -351,11 +349,9 @@
     height: auto;
   }
   .g6-prototype {
-    width: 220px; 
-    height: 650px; 
-    margin: 10px;
+    width: 255px; 
   } 
   .g6-prototype .iframe {
-    -webkit-transform: scale(0.5);
+    -webkit-transform: scale(0.6);
   }    
 }

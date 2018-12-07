@@ -349,9 +349,9 @@
     height: auto;
   }
   .g6-prototype {
-    width: 255px; 
+    width: 230px; 
   } 
   .g6-prototype .iframe {
-    -webkit-transform: scale(0.6);
+    -webkit-transform: scale(0.55);
   }    
 }

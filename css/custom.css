@@ -341,9 +341,7 @@
   }
   iframe.invision {
     transform: scale(0.6) !important;
-    width: 420px;
-    height: 880px;
-    margin-left: -105px;
+    margin-left: -90px;
     margin-top: -150px;
   }
 }

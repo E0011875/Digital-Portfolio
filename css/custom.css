@@ -7,6 +7,11 @@
   font-family: "Hind",sans-serif;
   letter-spacing: .10em;
 }
+.border {
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
 .carousel {
   width: 100%;
   font-size: 70px;
@@ -317,8 +322,8 @@
 .g6-prototype .iframe {
   width: 424px; 
   height: 916px; 
-  -webkit-transform: scale(0.8); 
-  -webkit-transform-origin: 0 0;
+  transform: scale(0.8); 
+  transform-origin: 0 0;
 }     
 @media (max-width: 768px) {
   .sidebar {
@@ -352,6 +357,6 @@
     width: 230px; 
   } 
   .g6-prototype .iframe {
-    -webkit-transform: scale(0.55);
+    transform: scale(0.55);
   }    
 }

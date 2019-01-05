@@ -316,7 +316,26 @@
                 <li>
                     <a href="#FinalDesign">-Final Design</a>
                 </li>
+                <li>
+                    <a href="#Features">-Features</a>
+                </li>
             </ul>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#ExpertReview" class="topic">Expert Review</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#Improvement" class="topic">Improvement</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#StyleGuide" class="topic">Style Guide</a>
+                </li>
+            </ul>
+            
           </nav>
           <div class="col-lg-8 mx-auto">
             <div class="modal-body">
@@ -518,6 +537,121 @@
                 <figure>
                     <img src="img/the_g6_project/booking.png" class="responsive">
                 </figure>
+              </section>
+              <section id="Features">
+                <h4 class="text-uppercase">Features</h4>
+                <p><b>Feature #1: Sort by Price & Distance</b></p>
+                <p>Several ideas came to my head; some were good, some bad and, some downright convoluted. I eventually narrowed down to two of them which I thought were straightforward in finding a place to sing.</p>
+                <p>The first idea was inspired by ride-hailing apps such as Grab and Uber that adopted a minimalistic approach in searching for nearby targets. It utilizes geo-location APIs to scan the radius around a user’s location for karaoke outlets and displays them on a map. With a map, users can easily gauge how far a place is with reference to their current position. As the amount of information that can be displayed on a map is limited, users will need to select the individual markers to find out more about the place. Such design would appeal well to users like Terrance (User Persona 1) whose sole objective is to find somewhere near to sing. They are likely to pick the nearest location and proceed to pay afterward.  The process would come off as low-effort to them as their only concern is distance and nothing else. However, for users who consider multiple factors may find it tedious to weigh their choices against components such as prices as they will need to switch between markers to gather the information necessary to perform a comparison. Such information is hidden unless specified by the user.</p>
+                <p><u>Design 1</u></p>
+                <!-- insert gif here -->
+                <p>The second design is based off a typical hotel-booking app that generate a list of results according to one’s preference. Users can browse through comparative factors like prices, distance, images of karaoke places, etc. when comparing outlets. Search results can be refined using filters to increase users’ chances of finding an ideal location. Aside from the standard filters like date, time and duration, users can impose stricter conditions using the advanced options to sort according to different metrics or specify ranges for price and distance. Users can also indicate the type of amenities they would like to see in an outlet. The design makes searching more flexible by giving users the freedom to customize their search. The only problem is that, unlike the previous design, users are required to make more decisions which can be troublesome.</p>
+                <p><u>Design 2 </u></p>
+                <!-- insert gif here -->
+                <p>After much deliberation, I decided to go for the second design as I felt that the latter is able to accommodate a wider range of users. Earlier studies suggest that users would take into account other factors like prices and, not just distance when going for karaoke. They would spend some time researching on those factors before deciding where to sing. The chosen design facilitates this behavior by making sure that such information is visible at a glance to enable an easier time searching. The use of filters plays a part as well by letting users work on their search results. The other design is more suited for activities that needs to be done quickly such as cab-hailing or placing an order. Reducing the number of steps a user has to take would generally help to achieve this. However, Karaoke is often regarded as an entertainment done at one’s leisure meaning that customers can afford to be picky to make their money spent well-worth.</p>
+                
+                
+                <p><b>Feature #2: Deals & Promotions</b></p>
+                <p>Like the first feature, two designs were proposed. The only difference between them is how promotional campaigns are being organized. The first method categorized them by vendors while the other combines all of them. The decisive factor lies in how users normally go about finding the latest deals and promotions. From the earlier sections, it is suggested that price and distance take precedence over everything else when users are seeking places to sing. Since most promotions have a direct implication on the cost, users are not too concern about the vendor organizing as long as their campaigns are attractive. Differentiating them would only get in their way of searching as it interferes with their visibility. Hence the second design would be a better fit as it lists down all the ongoing events, allowing users to decide what they want to do with it.</p>
+                <p><u>Design 1</u></p>
+                <!-- insert gif here -->
+                <p><u>Design 2 </u></p>
+                <!-- insert gif here -->
+
+                
+                <p><b>Feature #3: Information about Outlet</b></p>
+                <p>To give users access to all the important information in one place, the description screen is designed to contain the following information which users find lacking.</p>
+                <ul style="list-style-type: none">
+                    <li>1) Image Gallery: Photos of karaoke place </li>
+                    <li>2) Price List: Price rates for different hours</li>
+                    <li>3) Opening hours: Business duration of each day including public holidays</li>
+                    <li>4) Description + Geolocation: Brief overview of the place alongside with a miniature map specifying its location. </li>
+                    <li>5) Duration & Timeslot: Available timings under the respective duration</li>
+                    <li>6) Featured Amenities: Facilities offered by the outlet</li>
+                    <li>7) Customer Reviews: Feedback of customers who went previously</li>
+                </ul>
+                <figure>
+                    <img src="img/the_g6_project/description_screen_breakdown.png" class="responsive">
+                </figure>
+                <figcaption> Figure 16: Detailed breakdown of description screen</figcaption>
+                <p>The above segments would help to fill up any knowledge gap about a place to avoid any unexpected issues arising from a booking. They are organized in a way that those of higher priority would be presented to the users first. As humans are predominately visual creatures, it makes sense to present images of the karaoke place at the beginning so that they can quickly assess its suitability. This is immediately followed by other important information such as pricing, opening hours and timeslots necessary for booking. The remaining components are seated in places where they normally would be, in line with the standard hierarchy. For instance, you would expect to find customer reviews at the bottom rather than the top.</p>
+                
+                
+                <p><b>Feature #4: Booking & Management</b></p>
+                <p>Booking ensures ease of use by reducing the number of steps required. The diagram below shows how a user would generally go about booking a karaoke room. Every stage of the interaction is communicated using call-to-action (CTA) buttons found in strategic places of the screen. CTAs utilizes high contrasting colors to capture users' attention, leading them in the right direction.</p>
+                <p>When an outlet has been decided, users will indicate their duration and select an available time slot from the horizontal slider in Step 3. Payment can be made using any preferred method including credit cards, PayPal and Google Pay. Once payment is approved, users will receive a feedback implying a successful transaction along with their booking details (Step 6). Problematics field (e.g., missing or incorrect fields) will be highlighted for users to identify and diagnose any errors before committing an irreversible action during payment; this uses one of Jakob Nielson’s heuristics <i>- help users recognize, diagnose, and recover from errors.</i></p> 
+                <figure>
+                    <img src="img/the_g6_project/booking_workflow.png" class="responsive">
+                </figure>
+                <figcaption> Figure 17: Workflow for booking a karaoke room</figcaption>
+                <figure>
+                    <img src="img/the_g6_project/error_diagonostic.png" class="responsive" style="width:35%">
+                </figure>
+                <figcaption> Figure 18: Error Diagnostic</figcaption>
+                <p>Al bookings records (past & present) are stored in the management section for users to keep track of their payment and purchase. Users can check the status of their reservation and whether their payment is approved. Once booking is confirmed, they can refer to that stored information when registering at the reception. For circumstances where a booking needs to be canceled, they can head to the specific reservation to do so at the discretion of the vendors. Having a management section remove the cognitive demand from users to remember every detail of their bookings.</p>
+                <!-- insert gif here -->
+            
+            
+              </section>
+              <section id="ExpertReview">
+                <h3 class="text-uppercase">Expert Review</h3>
+                <p>I had the opportunity to consult a UX specialist from <i>ThoughtWorks</i> regarding the design of G6. Established in 1993, <i>ThoughtWorks</i> is a global technological consultancy specializes in software design and delivery.</p>
+                <p>Her comments are as follows.</p>
+                <ul style="list-style-type: disc">
+                    <li>Having too many options in the advanced filter can lead to decision fatigue. This can cause users to delay or opt out of decision-making when information gets too overwhelming. It is advised to cut down on the number of filters especially those that produce the same results and are less meaningful. An example would be price range which bears the same functionality as sorting prices in ascending order. Both seek to find the cheapest rate on the list. A typical user would stop scrolling when prices become too expensive.</li>
+                    <li>Picking a timeslot is far away from intuitive. Since only one timing can be selected at any instance, the horizontal slider fails to provide any feedback on the number of hours that users have indicated to book at the beginning. To give users a holistic view of their booking, related responses should be grouped and placed close to each other as suggested by the <i>Gestalt Law of Perceptual Grouping.</i></li>
+                    <li>In the event where the horizonal slider gets too long, users may need to scroll and swipe to reveal more timings which demands more effort.</li>
+                    <li>When comes to handling errors, prevention is always better than cure. Instead of helping users recover from their errors, designer should seek to prevent them from happening. For the case of ill-filled forms, users should only be allowed to hit submit after meeting all the requirements. This is to save them the trouble and disappointment of needing to go back and review their submissions.</li>
+                </ul>
+                <figure>
+                    <img src="img/the_g6_project/consultation_thoughtworks.png" class="responsive">
+                </figure>
+                <figcaption>Figure 19: Brainstorming session with Yian Liang, <i>ThoughtWorks</i></figcaption>
+              </section>
+              <section id="Improvement">
+                <h3 class="text-uppercase">Improvement</h3>
+                <ul style="list-style-type: none">
+                    <li>
+                        <b>1) Meaningful Filters</b>
+                        <p>The feedback gathered suggest that having too many choices can be stressful and difficult for users to comprehend. As such, the number of filters was reduced to restrict the number of ways users can generate the desired results. Of those removed were distance and price range which adds little value to searching since sorting results in those categories would work the same way. The UI is therefore simple to allow users to spend less time making decisions and more time on maximizing productivity.</p>
+                        <figure>
+                            <img src="img/the_g6_project/advanced_filtering_before_after.png" class="responsive">
+                        </figure>
+                        <figcaption>Figure 20: Advanced Filtering Options, before and after</figcaption>
+                    </li>
+                    <li>
+                        <b>2) Condensed Selection</b>
+                        <p>Concordant to the principle of <i>Perceptual Grouping</i>, the horizontal slider was replaced with a tabbed table to allow the user to indicate their duration and timeslot in the same place. A tabbed table effectively grouped the duration (tab) and time field (content) into a single entity since the latter is dependent on the former. Furthermore, unlike a slider, a tabbed design does not “afford” complicated gesture like swiping but instead uses a conventional tap-to-select approach.</p>
+                        <p>In the book, <i>Information Visualization</i>, Ware (2012) pointed out that humans have short-term memory limitations and often need to reference information connected in one way or another. Switching between information would disrupt a user's cognitive thread needed for storing information in his/her head. In the case of a tabbed table, integrating the duration and time would significantly reducing the cognitive effort needed to maintain this thread while filling up the details.</p>
+                        <p>To bring the idea of clarity a step further, each timeslot is represented by a time range (i.e., HH: mm – HH: mm) instead of a single timing (HH: mm) like before. The range correspond to the duration which the timeslot falls under. Users can also find more timeslots using the pagination element which takes the form of a button – a stronger visual cue compared to a slider bar.</p>
+                        <p>To determine how the new design fare against the old one, a simple A/B test was conducted to measure the time taken for users to perform the same booking on each design. It was discovered that, on average, the new design took 14.30s to complete while the other took about 15.01s. The improved version was significantly faster by 1 min 11 seconds. When questioned about the discrepancy, many claims that the new design is more apparent in conveying the same information; it gives them a better idea of the check-in and checkout timings which provided assurance. They also felt that the improved layout is more condense given that there are now fewer input fields.</p>
+                        <figure>
+                            <img src="img/the_g6_project/selecting_a_timeslot_before_after.png" class="responsive">
+                        </figure>
+                        <figcaption>Figure 21: Selecting a Timeslot, before and after</figcaption>
+                    </li>
+                    <li>
+                        <b>3) Error Prevention</b>
+                        <p>The process of filling up a form in itself is time-consuming, having to go back and correct them makes the experience worst. Instead of communicating errors to users, it is better to prevent users from making them in the first place. To achieve this, the status of each field is now represented by either a cross or a tick. These indicators suggest whether a field is correctly filled to allow users to rectify any errors before moving onto the next one. By filling in every detail and reviewing them at the same time, users can ensure that their inputs are free from errors. Submissions that fail to meet all the checks will not be allowed to proceed (i.e., the payment button is disabled) until all the requirements are met for security reasons. </p>                            <figure>
+                            <img src="img/the_g6_project/error_diagnostic_before_after.png" class="responsive">
+                        </figure>
+                        <figcaption>Figure 22: Error Diagnostic, before and after</figcaption>
+                    </li>
+                </ul>
+              </section>
+              <section id="StyleGuide">
+                <h3 class="text-uppercase">Style Guide</h3>
+                <p>To come up with a suitable color scheme for the prototype, I use an online color scheme generator known as <a href="https://coolors.co/ " style="color: blue">Coolors.co</a> The tool made use of deep learning to generate color schemes based on online photographs, movie, and popular art. A typical color scheme comprises five colors. As too many colors may introduce inconsistency, I decided to narrow down to only three colors <i>- Tuna Grey, Bouquet Purple and Shamrock Green.</i> The colors were classified as primary, secondary and accent use in the ratio of 60%, 30% and 10% to bring balance into the composition. In the process of doing so, I also needed to ensure that I have at least one contrasting pair of colors (i.e., colors at the opposite end of the wheel) to provide sufficient visibility for the users.</p>
+                <figure>
+                    <img src="img/the_g6_project/6_3_1_g6.png" class="responsive">
+                </figure>
+                <figcaption>Figure 23: 6-3-1 Rule: <i>Tuna Grey - Bouquet Purple - Shamrock Green</i></figcaption>
+                <p>Being limited to only three colors requires me to find other means to differentiate between the elements. One solution is to use different shades of the same color by adjusting their hue, saturation, and value.</p>
+                <p>The result is a simple yet diverse style guide as shown below.</p>
+                <figure>
+                    <img src="img/the_g6_project/g6_style_guide.png" class="responsive">
+                </figure>
+                <figcaption>Figure 24: Style Guide for G6</figcaption>
               </section>
               <section id="FinalDesign">
                 <h3 class="text-uppercase">Final Design</h3>
@@ -1245,6 +1379,7 @@
                 <li>i) Menu depth 1 had a mean speed of 2.21s and a standard deviation of 1.30s</li>
                 <li>ii) Menu depth 2 had a mean speed of 5.10s and a standard deviation of 4.76s</li>
                 <li>iii) Menu depth 3 had a mean speed of 7.36s and a standard deviation of 5.47s</li>
+                </ul>
                 <p>Three paired sample t-test were used to make post hoc comparisons between menu depths with Bonferroni correction for k=3 corrections <i>(α → 0.05/3 = 0.017).</i></p>
                 <figure>
                     <img src="img/hci_experiment_marking_vs_radial_menu/fig1_paired_t_test_depth_completion_time.png" class="responsive">

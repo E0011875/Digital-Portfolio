@@ -545,21 +545,18 @@
                 <p>Several ideas came to my head; some were good, some bad and, some downright convoluted. I eventually narrowed down to two of them which I thought were straightforward in finding a place to sing.</p>
                 <p>The first idea was inspired by ride-hailing apps such as Grab and Uber which adopted a minimalistic approach in searching for nearby targets. It utilizes geo-location APIs to scan the radius around a user’s location for karaoke outlets and displays them on a map. With a map, users can easily gauge how far a place is with reference to their current position. As the amount of information that can be displayed on a map is limited, users will need to select the individual markers to find out more about a place. Such design would appeal well to users like Terrance (User Persona 1) whose sole objective is to find somewhere near to sing. They are likely to pick the nearest location and proceed to make a payment immediately.  The process would come off as low-effort to them as their only concern is distance and nothing else. However, for users who consider multiple factors may find it tedious to weigh their choices against components like prices as they will need to switch between markers to gather the information necessary to perform a comparison. Such information is hidden unless specify by the user.</p>
                 <p><u>Design 1</u></p>
-                <!-- insert gif here -->
+                <img src="img/the_g6_project/feature_1_design_1.gif" class="responsive" style="width:35%; margin-bottom: 20px">
                 <p>The second design is based off a typical hotel-booking app that generate a list of results according to one’s preference. Users can browse through comparative factors like prices, distance, images of karaoke places, etc. when comparing between outlets. Search results can be refined using filters to increase users’ chances of finding their ideal location. Aside from the standard filters like date, time and duration, users can also impose stricter conditions using the advanced options to sort according to different metrics or specify a range for price and distance. Users can also indicate the type of amenities they would like to see in an outlet. This design makes searching more flexible by giving users the freedom to customize their search. The only problem is that, unlike the previous design, users are now required to make more decisions which can be troublesome.</p>
                 <p><u>Design 2 </u></p>
-                <!-- insert gif here -->
+                <img src="img/the_g6_project/feature_1_design_2.gif" class="responsive" style="width:35%; margin-bottom: 20px">
+                <p>The second design is based off a typical hotel-booking app that generate a list of results according to one’s preference. Users can browse through comparative factors like prices, distance, images of karaoke places, etc. when comparing between outlets. Search results can be refined using filters to increase users’ chances of finding their ideal location. Aside from the standard filters like date, time and duration, users can also impose stricter conditions using the advanced options to sort according to different metrics or specify a range for price and distance. Users can also indicate the type of amenities they would like to see in an outlet. This design makes searching more flexible by giving users the freedom to customize their search. The only problem is that, unlike the previous design, users are now required to make more decisions which can be troublesome.</p>
                 <p>After careful consideration, I decided to pick the second design as I felt that the latter is able to accommodate a wider range of users. Earlier studies suggest that users would take into account other factors like prices (not just distance) when going for karaoke. They would spend some time researching on those factors before deciding where to sing. The second method facilitates this behavior by making sure that such information is visible at a glance to give users an easier time searching. The use of filters plays a part as well by letting users work on their search results. As for the first method, it is more suited for activities that needs to be done quickly such as cab-hailing or placing an order. Reducing the number of steps would generally help to achieve this. However, Karaoke is often regarded as an entertainment done at one’s leisure which means that customers can afford to be picky to make their money spent well-worth.</p>
-                
-                
                 <p><b>Feature #2: Deals & Promotions</b></p>
                 <p>Like the first feature, two designs were proposed. The only difference is how promotional campaigns are being organized. The first method categorized campaigns by vendors while the other combines all of them. The decisive factor lies in how users would normally go about finding the latest deals and promotions. From the earlier sections, it is suggested that price and distance take precedence over everything else when users are seeking a place to sing. Since most promotions have a direct implication on the cost, users are not too concern about the vendor organizing as long as their campaigns are attractive. Differentiating them would only get in their way of searching as it interferes with their visibility. Hence the second design would be a better fit as it lists down all the ongoing events, allowing users to decide what they want to do with it.</p>
                 <p><u>Design 1</u></p>
-                <!-- insert gif here -->
+                <img src="img/the_g6_project/feature_2_design_1.gif" class="responsive" style="width:35%; margin-bottom: 20px">
                 <p><u>Design 2 </u></p>
-                <!-- insert gif here -->
-
-                
+                <img src="img/the_g6_project/feature_2_design_2.gif" class="responsive" style="width:35%; margin-bottom: 20px">
                 <p><b>Feature #3: Information about Outlet</b></p>
                 <p>To give users access to all the important information at once, the description screen is designed to contain the following information which users find lacking.</p>
                 <ul style="list-style-type: none">
@@ -576,8 +573,6 @@
                 </figure>
                 <figcaption> Figure 16: Detailed breakdown of description screen</figcaption>
                 <p>The above segments would help to fill up any knowledge gap about a place to avoid any unexpected issues arising from a booking. They are organized in a way such that those of higher priority would be presented to the users first. As humans are predominately visual creatures, it makes sense to present images of the karaoke place at the beginning so that they can quickly assess its suitability. This is immediately followed by other important information such as pricing, opening hours and timeslots necessary for booking. The remaining components seat in places where they normally would be, in line with the standard hierarchy. For instance, customer reviews are placed at the bottom rather than the top.</p>
-                
-                
                 <p><b>Feature #4: Booking & Management</b></p>
                 <p>Booking ensures ease of use by reducing the number of steps a user have to take. The diagram below illustrates how a user would generally go about booking a karaoke room. Every stage of the interaction is communicated using call-to-action (CTA) buttons found in strategic places of the screen. CTAs utilizes high contrasting colors to capture users' attention to lead them in the right direction.</p>
                 <p>When an outlet has been decided, users will indicate the number of hours they wish to book and choose a available time slot from the horizontal slider in Step 3. Payment can be made using any preferred method such as credit cards, PayPal, Google Pay, etc. Once a payment is approved, users will receive a feedback implying a successful transaction along with their booking details (Step 6). Problematics field (e.g., missing or incorrect fields) will be highlighted for users to identify and diagnose any errors before committing an irreversible action; this uses one of Jakob Nielson’s heuristics <i>- help users recognize, diagnose, and recover from errors.</i></p> 
@@ -586,13 +581,11 @@
                 </figure>
                 <figcaption> Figure 17: Workflow for booking a karaoke room</figcaption>
                 <figure>
-                    <img src="img/the_g6_project/error_diagonostic.png" class="responsive" style="width:35%">
+                    <img src="img/the_g6_project/error_diagnostic.png" class="responsive" style="width:35%">
                 </figure>
                 <figcaption> Figure 18: Error Diagnostic</figcaption>
                 <p>All bookings records (past & present) are stored in the management section for users to keep track of their payment and purchase. Users can check the status of their reservation and whether their payments are approved. Once booking is confirmed, they can refer to that stored information when registering at the reception. For circumstances where a booking needs to be canceled, they can head to the specific reservation to do so at the discretion of the vendors. Having a management section remove the cognitive demand from users to remember every detail of their bookings.</p>
-                <!-- insert gif here -->
-            
-            
+                <img src="img/the_g6_project/feature_4.gif" class="responsive" style="width:35%; margin-bottom: 20px">
               </section>
               <section id="ExpertReview">
                 <h3 class="text-uppercase">Expert Review</h3>

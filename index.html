@@ -265,9 +265,6 @@
                 <li>
                     <a href="#Overview4" class="topic">Overview</a>
                 </li>
-                <li>
-                    <a href="#PreliminaryResearch">-Preliminary Research</a>
-                </li>
             </ul>
             <ul class="list-unstyled">
                 <li>
@@ -331,6 +328,21 @@
             <ul class="list-unstyled">
                 <li>
                     <a href="#Prototype" class="topic">Prototype</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#UserTesting" class="topic">User Testing</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#KeyLearnings" class="topic">Key Learnings</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#Conclusion4" class="topic">Conclusion</a>
                 </li>
             </ul>
           </nav>
@@ -570,7 +582,7 @@
                 <p>The above segments would help users to fill up any knowledge gap about a place to avoid any unexpected issues arising from a booking. They are organized in a way such that those of higher priority would be presented to the users first. As humans are predominately visual creatures, it makes sense to present images of the karaoke place at the beginning so that they can quickly assess its suitability. This is immediately followed by other important information such as pricing, opening hours and timeslots necessary for booking. The remaining components are seated in places where they normally would be, in line with the standard hierarchy. For instance, customer reviews are often found at the bottom rather than the top.</p>
                 <p><b>Feature #4: Booking & Management</b></p>
                 <p>Booking ensures ease of use by reducing the number of steps a user have to take. The diagram below illustrates how a user would generally go about booking a karaoke room. Every stage of the interaction is communicated using call-to-action (CTA) buttons found in strategic places of the screen. CTAs utilizes high contrasting colors to capture users' attention to lead them in the right direction.</p>
-                <p>When an outlet has been decided, users will indicate the number of hours they wish to book and choose a available time slot from the horizontal slider in Step 3. Payment can be made using any preferred method such as credit cards, PayPal, Google Pay, etc. Once a payment is approved, users will receive a feedback implying a successful transaction along with their booking details (Step 6). Problematics field (e.g., missing or incorrect fields) will be highlighted for users to identify and diagnose any errors before proceeding to commit an irreversible action; this uses one of Jakob Nielson’s heuristics <i>- help users recognize, diagnose, and recover from errors.</i></p> 
+                <p>When an outlet has been decided, users will indicate their room size, the number of hours they wish to book and choose a available time slot from the horizontal slider in Step 3. Payment can be made using any preferred method such as credit cards, PayPal, Google Pay, etc. Once a payment is approved, users will receive a feedback implying a successful transaction along with their booking details (Step 6). Problematics field (e.g., missing or incorrect fields) will be highlighted for users to identify and diagnose any errors before proceeding to commit an irreversible action; this uses one of Jakob Nielson’s heuristics <i>- help users recognize, diagnose, and recover from errors.</i></p> 
                 <figure>
                     <img src="img/the_g6_project/booking_workflow.png" class="responsive">
                 </figure>
@@ -650,6 +662,57 @@
                         <iframe class='iframe' src='https://invis.io/MVPTU09P4SA' frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
+              </section>
+              <section id="UserTesting">
+                <h3 class="text-uppercase">User Testing</h3>
+                <p>To test my prototype, I made use of an online tool known as <a href="https://maze.design/" style="color: blue">MAZE</a>. The tool allows designers to test and quickly gather feedback for their products without incurring any costs. To do this, they will need to import their Invision prototypes and create specific user tasks (i.e., mission) that can be shared via a public link. A report would then be generated to provide statistical insights on conversion rate, bounce rate, completion time, etc. to determine how their product performed. In the case of G6, the prototype is tested against the following metrics.</p>
+                <ul style="list-style-type: none">
+                    <li><b>1) Completion Time:</b> time taken (in seconds) for users to complete the task </li>
+                    <li><b>2) Conversation Rate:</b> percentage of users who have completed the task</li>
+                    <li><b>3) Measured Satisfaction:</b> whether the system design has met users’ expectation</li>
+                </ul>
+                <p>The user task is specified as follows.</p>
+                <figure>
+                    <img src="img/the_g6_project/user_task.png" class="responsive">
+                </figure>
+                <figcaption>Figure 25: User Task for MAZE</figcaption>
+                <p>An ideal path (i.e., the shortest path) of a successful booking is mapped out as shown below.</p>
+                <figure>
+                    <img src="img/the_g6_project/shortest_path.png" class="responsive">
+                </figure>
+                <figcaption>Figure 26: Shortest Booking Path</figcaption>
+                <p>Of all the people whom I approached, 55 of them agreed to participate in the test. Here are some of the insights pertaining to the different metrics gathered from the exercise.</p>
+                <p><b>Completion Time</b></p>
+                <p>On average, users took about 31.4s to complete the given task. This is acceptable considering the fact that this is the first-time they are using G6. Anything that goes further than one minute would imply difficulty in navigating through the app. The misclick rate is also found to be at 25%, suggesting that a significant number of users are exploratory learners and have a tendency to click on elements outside the scope of the mission.</p>
+                <figure>
+                    <img src="img/the_g6_project/heat_map.png" class="responsive">
+                </figure>
+                <figcaption>Figure 27: Heatmap showing other clicked regions</figcaption>
+                <p><b>Conversation Rate</b></p>
+                <p>Out of the 55 participants, 81.8% managed to completed the given task. Amongst the successful ones, 10.9% completed the mission using the expected path while 70.9% took an alternative route that yearns the same result. It is possible that users were intrigued by other features which led to other kind of interaction apart from booking. The remaining 18.2% who have abandoned or given up on the mission are those found to have skipped instructions and proceed without knowing what to expect. Despite such occurrences, it is safe to presume that the users have no problem converting given the high success rate for a booking app like G6.</p>
+                <figure>
+                    <img src="img/the_g6_project/dashboard.png" class="responsive">
+                </figure>
+                <figcaption>Figure 28: Result Dashboard</figcaption>
+                <p><b>Measured Satisfaction</b></p>
+                <p>Responses were generally positive, comprising a mixture of suggestions, reviews, and thoughts. Some users felt that the content could have been more interactive if not for the limitation of a prototype. They wanted to explore the app in more details to better understand how it works. Others commented on the UI, which they wanted to be kept clean and simple. They claimed that the final product turns out to be much easier and straightforward to use than expected. The only complaint they had was the lack of filtering options to narrow down on their search results. I like to term this as the “Goldilocks Problems” as it was previously revealed that users dislike having too many options due to decision fatigue. However, the feedback now suggest that users do not wish to be tied down by too little choices as it would impede their search. This goes to show that users are seeking for the “right amount” to perform their tasks effectively. However, this is only possible when the users have actually seen and used the feature before; otherwise, they are merely assuming what would works best for them. That being said, many still look forward to using G6 if made available to them. A few suggested doing a desktop release if the product proves to be successful.</p>
+                <figure>
+                    <img src="img/the_g6_project/feedback.png" class="responsive">
+                </figure>
+                <figcaption>Figure 29: Comments left by Testers</figcaption>
+            
+              </section>
+              <section id="KeyLearnings">
+                <h3 class="text-uppercase">Key Learnings</h3>
+                <p>Throughout this project, there were some valuable lessons that I have learned which are worth mentioning.</p>
+                <p><b>Getting Rid of your Biasness as a Designer</b></p>
+                <p>One of the biggest challenges when designing G6 is to refrain myself from imposing my view as a designer when designing. It can be very tempting to take the easy way out by deciding on behalf of my users without first consulting them. Because designers know too much, they tend to form wonderful mental models of their own creation, leading them to believe that each feature is easy to understand. The reality is that the user’s mental model is somewhat deficient; they often have trouble using the system and are prone to making errors. Only through user studies would designers realize that their knowledge about users are flawed due to the differences between mental models. Take the first feature for example, it was initially thought that having multiple filtering options would make searching more flexible, but the truth is that having too many choices can lead to decision fatigue. Conducting proper user studies and testing would allow designers to overcome such knowledge gap, delivering features that truly matters to users.</p>
+                <p><b>Do not Skip Wireframing </b></p>
+                <p>For convenience sake, I thought jumping straight to a high-fidelity prototype was a good idea. I regretted it. As a high-fidelity prototype is meant to replicate an actual working app, it requires more effort and input from designers. Consequently, I find myself spending way too much time on insignificant matters like colors and spacing instead of trying to ways to improve the user experience. It later occurred to me that such problems could have been avoided if there were some attempt to wireframe the product at the beginning of the project. A wireframe encourages people to comment on the user experience without having to worry about the repercussion. Made up entirely of boxes and arrow, wireframe allow for easy and quick revision with the focus on usability rather than aesthetics. Jumping straight into high-fidelity may cause designers to run into the risk of creating a fanciful product that no one is going to use.</p>
+              </section>
+              <section id="Conclusion4">
+                <h3 class="text-uppercase">Conclusion</h3>
+                <p>In spite of everything, the project had taught me how to apply various concepts like empathy map and user personas when building a user-centric product. By following closely to the steps in the design thinking process, I learned how to empathize, define, idea, prototype, and test a product. These were valuable lessons which enable me to go a long way as a designer. I must say, without a doubt, <i>G6 is easily one of the most ambitious projects that I have embarked as a designer.</i></p>    
               </section>
             </div>
           </div>

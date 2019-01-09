@@ -452,6 +452,7 @@
                     </figure>
               </section>
               <section id="ContextualInquiry">
+                  <h4 class="text-uppercase">ContextualInquiry</h4>
                   <p>The participants proceed to demonstrate their points through a contextual inquiry exercise, in which they would carry out several tasks as a group. I went to tag along and observe, taking down important pieces of information along the way.</p>
                   <p>By borrowing subjects of the same demographic from my interview, I am able to relate to their experience first-hand with the goal of building a deeper level of empathy of their problems. Should I be in doubt, I would raise questions directed towards their thoughts and feelings on-set. However, I needed to ensure that the process is non-intrusive to avoid any <i>Hawthorne Effect</i> where subjects knowingly performed due to my presence.</p>
                   <p>The task is specified as follows:</p>
@@ -1517,25 +1518,15 @@
             $('.probootstrap-burger-menu').removeClass('active');
             $('body').removeClass('show');
 		});
-    //   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    //     anchor.addEventListener('click', function (e) {
-    //       e.preventDefault();
-    //       document.querySelector(this.getAttribute('href')).scrollIntoView({
-    //         behavior: 'smooth'
-    //       });
-    //     });
-    //   });
-    // Smooth scrolling
-    $("a").on('click', function(event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var hash = this.hash;
-            $('html, body').animate({
-                scrollTop: $(hash).offset().top
-            }, 800, function(){
-                window.location.hash = hash;
-            });
-        }
+      // smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start' 
+          });
+        });
       });
      // elevate zoom
      $('#AffinityDiagram, #UserJourneyMap, #BookingWorkflow, #ShortestPath ').elevateZoom({

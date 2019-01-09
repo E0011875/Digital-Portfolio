@@ -362,14 +362,14 @@
                     <p>Other methods were mentioned as well, such as following the lead of others who are more experienced or banking on their chances to discover a new place in their search.</p>                    
               </section>
               <section id="UserResearch">
-                <h3 class="text-uppercase">User Research</h3>
-                <p>To validate my preliminary findings, more thorough research needs to be conducted. As such, I surveyed both students and adults to find out the current problems that they face when going for karaoke. Then, with the focus on actual experience, I conducted several semi-structured interviews and contextual inquiries to gather more insights into their pains and needs. By adopting a user-centric approach to user research, I can ensure that production is lean, focusing on features that only matters to the users.</p>
-                <p>The research is structured as follows:</p>
-                <ul style="list-style-type:none">
-                    <li><b>i) Surveys</b>: Provides a general knowledge on the current situation. By exploring the different problems face by customers, I can identify trends and patterns that help me narrow down on the pivotal issues that demand attention.</li>
-                    <li><b>ii) Semi-structured interview</b>: Once the problematic areas are defined, I need to pinpoint the exact cause of the problem by raising questions designed to lead me to those answers. In the process of doing so, I can also acquire a detailed description of their personal experience and make interesting discoveries that was not previously known to me.</li>
-                    <li><b>iii) Contextual Inquiry</b>: Following the semi-structured interviews, it is necessary to witness the behaviors of the users to confirm that the issues persist among them. I would need to recruit several individuals whose task is to book a nearby karaoke place which I will shadow them along as they execute them. When in doubt, I would jump in and question their behavior to understand their mental states and rationale behind their decision. Information found useful will be documented on paper, and actions will be recorded on video for later reference. After the activity, both the experimenter and the subject will review the findings, sum up the overall experience, and follow up with any action or emotion in greater details.</li>
-                </ul>
+                    <h3 class="text-uppercase">User Research</h3>
+                    <p>To validate my preliminary findings, more thorough research needs to be conducted. As such, I surveyed both students and adults to find out the current problems that they face when going for karaoke. Then, with the focus on actual experience, I conducted several semi-structured interviews and contextual inquiries to gather more insights into their pains and needs. By adopting a user-centric approach to user research, I can ensure that production is lean, focusing on features that only matters to the users.</p>
+                    <p>The research is structured as follows:</p>
+                    <ul style="list-style-type:none">
+                        <li><b>i) Surveys</b>: Provides a general knowledge on the current situation. By exploring the different problems face by customers, I can identify trends and patterns that help me narrow down on the pivotal issues that demand attention.</li>
+                        <li><b>ii) Semi-structured interview</b>: Once the problematic areas are defined, I need to pinpoint the exact cause of the problem by raising questions designed to lead me to those answers. In the process of doing so, I can also acquire a detailed description of their personal experience and make interesting discoveries that was not previously known to me.</li>
+                        <li><b>iii) Contextual Inquiry</b>: Following the semi-structured interviews, it is necessary to witness the behaviors of the users to confirm that the issues persist among them. I would need to recruit several individuals whose task is to book a nearby karaoke place which I will shadow them along as they execute them. When in doubt, I would jump in and question their behavior to understand their mental states and rationale behind their decision. Information found useful will be documented on paper, and actions will be recorded on video for later reference. After the activity, both the experimenter and the subject will review the findings, sum up the overall experience, and follow up with any action or emotion in greater details.</li>
+                    </ul>
               </section>
               <section id="Survey">
                     <h4 class="text-uppercase">Survey</h4>
@@ -1518,16 +1518,15 @@
             $('.probootstrap-burger-menu').removeClass('active');
             $('body').removeClass('show');
 		});
-      // smooth scrolling
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth',
-            block: 'start' 
-          });
-        });
-      });
+    //   // smooth scrolling (only works for desktop)
+    //   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    //     anchor.addEventListener('click', function (e) {
+    //       e.preventDefault();
+    //       document.querySelector(this.getAttribute('href')).scrollIntoView({
+    //         behavior: 'smooth'
+    //       });
+    //     });
+    //   });
      // elevate zoom
      $('#AffinityDiagram, #UserJourneyMap, #BookingWorkflow, #ShortestPath ').elevateZoom({
         zoomType: "lens",

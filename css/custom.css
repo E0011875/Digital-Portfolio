@@ -43,22 +43,9 @@
   font-size: 18px;
   padding: 0 1em;
 }
+/* figure */
 figcaption {
   margin: -15px 0 30px 0;
-}
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-  height: 0;
-  margin-bottom: 50px;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 90%;
-	height: 100%;
 }
 .item figure {
   display: flex;
@@ -77,6 +64,21 @@ figcaption {
 }
 .pdv-screen {
   width:360px;
+}
+/* video */
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+  height: 0;
+  margin-bottom: 50px;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90%;
+	height: 100%;
 }
 /* header */
 .header {

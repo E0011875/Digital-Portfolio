@@ -19,7 +19,6 @@
 
   <!-- START: header -->
   <div class="probootstrap-loader"></div>
-
   <header role="banner" class="probootstrap-header">
     <div class="container">
         <a href="index.html" class="probootstrap-logo" style="letter-spacing:0">Lawsford Artworks</a>
@@ -466,7 +465,7 @@
                   </div>
                   <p>The process was further mapped to a user journey map where I would break down and analyze each step in greater details. A user journey map is useful in highlighting the touchpoints a user has with the current method of securing a karaoke place from start to finish. It describes how a user thinks and feel in every scenario of the journey, revealing more insights into their mental models.</p>
                   <figure>
-                        <img src="img/the_g6_project/user_journey_map.png" class="responsive">
+                    <img id="UserJourneyMap" src="img/the_g6_project/user_journey_map.png" class="responsive">
                   </figure>
                   <figcaption> Figure 15: User Journey Map</figcaption>
               </section>
@@ -477,7 +476,7 @@
                     <h4 class="text-uppercase">Affinity Diagram</h4>
                     <p>To make better use of the feedback gathered from my studies, I consolidated and categorized them into themes denoting a goal or problem into one place. Designers would usually refer to them as <i>affinities</i> where each affinity is captured onto a sticky note which would be moved around and grouped together. The idea here is to draw patterns to help determine the next actionable step.</p>
                     <figure>
-                        <img src="img/the_g6_project/affinity_diagram.png" class="responsive">
+                        <img id="AffinityDiagram" src="img/the_g6_project/affinity_diagram.png" class="responsive">
                     </figure>
                     <p>From the diagram, the responses gathered ultimately ties back to the <b>experience</b> of going for karaoke. In other words, the intended product needs to focus on creating positive experience of going for karaoke by considering the following aspects that matters most to the users:</p>
                     <figure>
@@ -584,7 +583,7 @@
                 <p>Booking ensures ease of use by reducing the number of steps a user have to take. The diagram below illustrates how a user would generally go about booking a karaoke room. Every stage of the interaction is communicated using call-to-action (CTA) buttons found in strategic places of the screen. CTAs utilizes high contrasting colors to capture users' attention to lead them in the right direction.</p>
                 <p>When an outlet has been decided, users will indicate their room size, the number of hours they wish to book and choose a available time slot from the horizontal slider in Step 3. Payment can be made using any preferred method such as credit cards, PayPal, Google Pay, etc. Once a payment is approved, users will receive a feedback implying a successful transaction along with their booking details (Step 6). Problematics field (e.g., missing or incorrect fields) will be highlighted for users to identify and diagnose any errors before proceeding to commit an irreversible action; this uses one of Jakob Nielson’s heuristics <i>- help users recognize, diagnose, and recover from errors.</i></p> 
                 <figure>
-                    <img src="img/the_g6_project/booking_workflow.png" class="responsive">
+                    <img id="BookingWorkflow" src="img/the_g6_project/booking_workflow.png" class="responsive">
                 </figure>
                 <figcaption> Figure 17: Workflow for booking a karaoke room</figcaption>
                 <figure>
@@ -678,7 +677,7 @@
                 <figcaption>Figure 25: User Task for MAZE</figcaption>
                 <p>An ideal path (i.e., the shortest path) of a successful booking is mapped out as shown below.</p>
                 <figure>
-                    <img src="img/the_g6_project/shortest_path.png" class="responsive">
+                    <img id="ShortestPath" src="img/the_g6_project/shortest_path.png" class="responsive">
                 </figure>
                 <figcaption>Figure 26: Shortest Booking Path</figcaption>
                 <p>Of all the people whom I approached, 55 of them agreed to participate in the test. Here are some of the insights into the different metrics gathered from the exercise.</p>
@@ -1493,13 +1492,12 @@
   <div class="gototop js-top">
     <a href="#" class="js-gotop"><i class="icon-chevron-thin-up"></i></a>
   </div>
-   <!-- Bootstrap core JavaScript -->
-   <script src="vendor/jquery/jquery.min.js"></script>
-   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-   <!-- Custom scripts for this template -->
   <script src="js/scripts.min.js"></script>
+  <!-- All jQuery plugins in "js/ignore"-->
   <script src="js/main.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <!-- Zoom -->
   <script src="js/custom.js"></script>
 
   <script type="text/javascript">
@@ -1527,7 +1525,13 @@
     //       });
     //     });
     //   });
-    }); 
+     $('#AffinityDiagram, #UserJourneyMap, #BookingWorkflow, #ShortestPath ').elevateZoom({
+        zoomType: "lens",
+        lensShape: "round",
+        lensSize: 200,
+        z_index: 9999
+     });
+    });
   </script>
   </body>
 </html>
